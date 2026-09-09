@@ -1,13 +1,13 @@
-//week01-3.cpp¾Ç²ß­pµeBasic²Ä3ÃD
+//week01-3.cppå­¸ç¿’è¨ˆç•«Basicç¬¬3é¡Œ
 //LeetCode 28. Find the Index of the First Occurrence in a String
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        int N1 = haystack.length(), N2 = needle.length(); //¨ç¦¡©I¥s¡A¦r¦êªø«×
-        for(int i=0;i< N1-N2;i++){
+        int N1 = haystack.length(), N2 = needle.length(); //å‡½å¼å‘¼å«ï¼Œå­—ä¸²é•·åº¦
+        for(int i=0;i<= N1-N2;i++){
             if(haystack.substr(i,N2) == needle) return i;
-            //¦pªG¤j¦r¦êªº.substr(¶}©l,ªø«×)µ¥©ó¤p¦r¦ê¡A´N§ä¨ìµª®×¤F
+            //å¦‚æžœå¤§å­—ä¸²çš„.substr(é–‹å§‹,é•·åº¦)ç­‰æ–¼å°å­—ä¸²ï¼Œå°±æ‰¾åˆ°ç­”æ¡ˆäº†
         }
-        return -1; //§ä¤£¨ì
+        return -1; //æ‰¾ä¸åˆ°
     }
 };
